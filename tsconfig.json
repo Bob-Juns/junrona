@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["es5", "ES2015", "ES2016", "ES2017", "ES2020", "ESNEXT", "DOM"],
+    "jsx": "react",
+    "allowJs": true,
+    "strict": true,
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@util/*": ["./src/util/*"]
+    }
+  },
+  "include": ["src", "src/types/*"]
+}
