@@ -85,7 +85,7 @@ const Refresh = styled(RefreshIcon)`
 
 const Wrapper = styled.section`
   width: 100%;
-  height: 100%;
+  height: 110px;
 
   padding: ${size.large} 0;
 

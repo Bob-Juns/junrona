@@ -66,7 +66,6 @@ const Tabs = styled.section`
   padding: ${size.base} ${size.base} 0;
   display: flex;
   justify-content: flex-start;
-  gap: 10px;
 `;
 
 const Confirmed = styled.button<{ selected: boolean; backgroundColor: string }>`

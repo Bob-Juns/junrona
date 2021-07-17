@@ -82,7 +82,7 @@ const Country = ({
               />
             </Content>
             <Content>
-              <Date color="#000">누적</Date>
+              <AccTitle color="#000">누적</AccTitle>
               <NewConfirmed color="#000">{accNew}</NewConfirmed>
               <Link to={`/${id}`}>
                 <GoDetail backgroundColor={color}>자세히 보기</GoDetail>
@@ -150,6 +150,10 @@ const Date = styled.time<{ color: string }>`
   color: ${(props) => props.color};
 `;
 
+const AccTitle = styled.h3`
+  font-size: calc(${size.tiny} - 1px);
+`;
+
 const NewConfirmed = styled.mark<{ color: string }>`
   font-size: ${size.small};
   font-weight: 800;
@@ -168,13 +172,13 @@ const GoDetail = styled.div<{ backgroundColor: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
 
   color: #fff;
   background-color: ${(props) => props.backgroundColor};
 
-  font-size: 10px;
-  font-weight: 800;
+  font-family: 'Noto Sans KR';
+  font-size: calc(${size.tiny} - 2px);
+  font-weight: 700;
 
   border-radius: 6px;
 
