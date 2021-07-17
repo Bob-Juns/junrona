@@ -48,6 +48,10 @@ const GlobalStyle = createGlobalStyle`
   ol {
     padding-left: 0;
   }
+
+  mark {
+    background-color: inherit;
+  }
 `;
 
 export default GlobalStyle;

@@ -5,9 +5,9 @@ export const size = {
   medium: '20px',
   large: '28px',
   huge: '48px',
-  navHeight: {
-    mobile: '50px',
-    tablet: '80px',
+  header: {
+    small: '50px',
+    large: '80px',
   },
 };
 
@@ -31,7 +31,7 @@ export const color = {
   green: '#12b886',
 
   country: {
-    us: {
+    unitedState: {
       primary: '#2e52b2',
       secondary: '#5c7cfa',
     },
@@ -47,7 +47,7 @@ export const color = {
 };
 
 export const screen = {
-  mobile: '600px',
+  mobile: '400px',
   tablet: '768px',
   desktop: '1024px',
 };
