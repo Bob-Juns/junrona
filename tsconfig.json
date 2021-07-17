@@ -12,10 +12,12 @@
     "noImplicitAny": true,
     "esModuleInterop": true,
     "paths": {
+      "@api/*": ["./src/api/*"],
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@layouts/*": ["./src/layouts/*"],
+      "@redux/*": ["./src/redux/*"],
       "@routes/*": ["./src/routes/*"],
       "@styles/*": ["./src/styles/*"],
       "@util/*": ["./src/util/*"]
