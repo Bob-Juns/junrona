@@ -47,7 +47,7 @@ export const color = {
 };
 
 export const screen = {
-  mobile: '400px',
+  mobile: '420px',
   tablet: '768px',
   desktop: '1024px',
 };
