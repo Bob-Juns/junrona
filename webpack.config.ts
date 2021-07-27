@@ -67,9 +67,6 @@ module.exports = {
       favicon: path.resolve(__dirname, 'public/favicon.ico'),
     }),
     new CleanWebpackPlugin(),
-    new webpack.DefinePlugin({
-      'process.env.API_URI': JSON.stringify(process.env.API_URI),
-    }),
   ],
   devServer: {
     contentBase: './dist',
