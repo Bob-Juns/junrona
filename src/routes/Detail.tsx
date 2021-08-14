@@ -4,6 +4,9 @@ import { useParams } from 'react-router';
 // styles
 import { color as colour } from '@styles/SharedStyle';
 
+// hooks
+import useTitle from '@hooks/useTitle';
+
 // api
 import { getApiByCountry } from '../api/data';
 
@@ -30,6 +33,7 @@ type dateType = {
 
 const Detail = () => {
   const { id } = useParams<{ id: string }>();
+  const changeTitle = useTitle();
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [date, setDate] = useState<dateType>({
@@ -126,6 +130,7 @@ const Detail = () => {
 
   useEffect(() => {
     setIsLoading(true);
+    changeTitle(`준로나 - ${id}`);
     const country =
       id === 'united-state'
         ? 'US'
