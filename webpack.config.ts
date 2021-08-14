@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const production = process.env.NODE_ENV === 'production';
 
@@ -67,6 +68,10 @@ module.exports = {
       favicon: path.resolve(__dirname, 'public/favicon.ico'),
     }),
     new CleanWebpackPlugin(),
+    new Dotenv(),
+    new webpack.DefinePlugin({
+      'process.env.GA_TRACKING_ID': JSON.stringify(process.env.GA_TRACKING_ID),
+    }),
   ],
   devServer: {
     contentBase: './dist',
